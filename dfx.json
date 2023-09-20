@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "mate_backend": {
+      "main": "src/mate_backend/main.mo",
+      "type": "motoko"
+    },
+    "mate_frontend": {
+      "dependencies": [
+        "mate_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/mate_frontend/src/index.html"
+      },
+      "source": [
+        "src/mate_frontend/assets",
+        "dist/mate_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
