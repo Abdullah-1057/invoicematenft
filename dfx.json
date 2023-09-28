@@ -4,6 +4,10 @@
       "main": "src/mate_backend/main.mo",
       "type": "motoko"
     },
+    "mate_backend_nft": {
+      "main": "src/mate_backend_nft/nft.mo",
+      "type": "motoko"
+    },
     "mate_frontend": {
       "dependencies": [
         "mate_backend"
